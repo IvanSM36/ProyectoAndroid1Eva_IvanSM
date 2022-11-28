@@ -44,11 +44,12 @@
             android:id="@+id/editTxtEdad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="18dp"
             android:ems="18"
             android:inputType="number"
-            android:text="Edad: " />
+            android:minHeight="48dp"
+            android:text="Edad: "
+            android:textColor="@color/white"
+            android:textSize="18dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
