@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">ProyectoAndroid1ºEva_IvanSM</string>
+    <string name="app_name">Hogwarts Test</string>
+
+    <string name="item01">Ayuda</string>
+    <string name="item02">Acerca de ...</string>
+
 </resources>

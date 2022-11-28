@@ -30,14 +30,13 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.838"
+        app:layout_constraintVertical_bias="0.821"
         app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/btnEmpezar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#CC000000"
         android:text="Empezar"
         android:textSize="25dp"
         android:onClick="irPantallaDatos"
@@ -52,7 +51,8 @@
         android:id="@+id/txtViewAyudanos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#B314333B"
+        android:background="#B3000000"
+        android:padding="5dp"
         android:text="Ayudanos a mejorar nuestros productos y servicios."
         android:textColor="@color/white"
         android:textSize="14dp"

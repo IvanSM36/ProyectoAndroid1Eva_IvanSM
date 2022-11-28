@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="genero">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Transformer</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="provincias">
+        <item>Almeria</item>
+        <item>Granada</item>
+        <item>Malaga</item>
+        <item>Cordoba</item>
+        <item>Jaen</item>
+        <item>Sevilla</item>
+        <item>Cadiz</item>
+        <item>Huelva</item>
+    </string-array>
+
+</resources>
