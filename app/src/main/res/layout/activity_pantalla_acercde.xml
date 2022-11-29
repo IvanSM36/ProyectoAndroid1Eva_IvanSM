@@ -40,27 +40,63 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="290dp"
-        android:layout_height="410dp"
+        android:layout_width="283dp"
+        android:layout_height="400dp"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="61dp"
-        android:background="#CC0808"
+        android:gravity="center|top"
         android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.545">
+        app:layout_constraintVertical_bias="0.52">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.821"
+            app:srcCompat="@drawable/logo" />
 
         <TextView
-            android:id="@+id/txtViewScroll"
+            android:id="@+id/txtViewFechaCreadion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
             android:fontFamily="@font/aladin"
-            android:padding="30dp"
+            android:padding="20dp"
+            android:text="Hogwarts Test"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtViewCreador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:padding="20dp"
             android:text="Ivan Salguero Martín"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtViewNombreApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:padding="20dp"
+            android:text="App creada en 2022"
             android:textAlignment="viewStart"
             android:textAllCaps="true"
             android:textColor="@color/black"
