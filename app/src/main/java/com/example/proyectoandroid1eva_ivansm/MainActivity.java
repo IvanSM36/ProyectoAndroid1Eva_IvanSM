@@ -38,14 +38,18 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
         if(id == R.id.item01){
+            Intent i = new Intent(this, PantallaAyudas.class);
+            startActivity(i);
             Toast.makeText(this, "Ayuda", Toast.LENGTH_SHORT).show();
         }else if (id == R.id.item02){
+            Intent i = new Intent(this, PantallaAcercde.class);
+            startActivity(i);
             Toast.makeText(this,"Acerca de ...", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
     
-    //Metodo que hace que el boton al que se le aplique redireccione al activiti pantalla de datos
+    //Metodo que hace que el boton al que se le aplique redireccione al activity pantalla de datos
     public void irPantallaDatos (View view) {
 
         Intent i = new Intent(this, PantallaDatos.class);
