@@ -24,6 +24,8 @@ public class PantallaDatos extends AppCompatActivity {
         spinGenero = (Spinner)findViewById(R.id.spinGenero);
         spinProvincia = (Spinner)findViewById(R.id.spinProvincias);
 
+
+
         ArrayAdapter<CharSequence> arrayGenero = ArrayAdapter.createFromResource(this, R.array.genero, android.R.layout.simple_spinner_item);
         spinGenero.setAdapter(arrayGenero);
         ArrayAdapter<CharSequence> arrayProvincia = ArrayAdapter.createFromResource(this, R.array.provincias, android.R.layout.simple_spinner_item);
