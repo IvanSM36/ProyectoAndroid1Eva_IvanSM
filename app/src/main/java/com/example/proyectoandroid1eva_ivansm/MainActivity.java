@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btnEmpezar = (Button) findViewById(R.id.btnEmpezar);
 
     }
-
+    //////////////// Action Bar ////////////////
     //Metodo para mostrar y ocultar el ActionBar
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.actionbar, menu);
@@ -48,12 +48,11 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    
+    //////////////// Action Bar ////////////////
+
     //Metodo que hace que el boton al que se le aplique redireccione al activity pantalla de datos
     public void irPantallaDatos (View view) {
-
         Intent i = new Intent(this, PantallaDatos.class);
-
         startActivity(i);
     }
 }

@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Damos el diseño al TextView. al item seleccionado del spinner
+    tenemos que desactivar el tema por defecto a NoActionBar -->
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/SpinnerCustom"

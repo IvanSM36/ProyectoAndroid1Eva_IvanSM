@@ -7,36 +7,7 @@
     android:background="@drawable/sebusca"
     tools:context=".PantallaAcercde">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-        <Button
-
-            android:id="@+id/btnAtras"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="irPantallaDatos"
-            android:padding="10dp"
-            android:text="atras"
-            android:textSize="15dp" />
-
-        <Button
-
-            android:id="@+id/btnBajar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:text="bajar"
-            android:textSize="15dp" />
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -44,7 +15,7 @@
         android:layout_height="400dp"
         android:layout_marginStart="60dp"
         android:layout_marginEnd="61dp"
-        android:gravity="center|top"
+        android:gravity="center"
         android:orientation="vertical"
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,36 +42,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aladin"
-            android:padding="20dp"
+            android:padding="10dp"
             android:text="Hogwarts Test"
             android:textAlignment="viewStart"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/txtViewCreador"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aladin"
-            android:padding="20dp"
+            android:padding="10dp"
             android:text="Ivan Salguero Martín"
             android:textAlignment="viewStart"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/txtViewNombreApp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aladin"
-            android:padding="20dp"
+            android:padding="1dp"
             android:text="App creada en 2022"
             android:textAlignment="viewStart"
             android:textAllCaps="true"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
+
+        <Button
+
+            android:id="@+id/btnAtras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="irPantallaDatos"
+            android:layout_margin="15dp"
+            android:text="atras"
+            android:textSize="15dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

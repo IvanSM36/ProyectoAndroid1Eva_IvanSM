@@ -2,6 +2,7 @@ package com.example.proyectoandroid1eva_ivansm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,10 +27,18 @@ public class PantallaTest extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
         if(id == R.id.item01){
+            Intent i = new Intent(this, PantallaAyudas.class);
+            startActivity(i);
             Toast.makeText(this, "Ayuda", Toast.LENGTH_SHORT).show();
         }else if (id == R.id.item02){
+            Intent i = new Intent(this, PantallaAcercde.class);
+            startActivity(i);
             Toast.makeText(this,"Acerca de ...", Toast.LENGTH_SHORT).show();
         }
         return super.onOptionsItemSelected(item);
     }
+    //////////////// Action Bar ////////////////
+
+
+
 }
