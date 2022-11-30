@@ -24,9 +24,14 @@ public class PantallaDatos extends AppCompatActivity {
         spinGenero = (Spinner)findViewById(R.id.spinGenero);
         spinProvincia = (Spinner)findViewById(R.id.spinProvincias);
 
-        ArrayAdapter<CharSequence> arrayGenero = ArrayAdapter.createFromResource(this, R.array.genero, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> arrayGenero = ArrayAdapter.createFromResource(this, R.array.genero, R.layout.spinner_item);
         spinGenero.setAdapter(arrayGenero);
-        ArrayAdapter<CharSequence> arrayProvincia = ArrayAdapter.createFromResource(this, R.array.provincias, android.R.layout.simple_spinner_item);
+        //Camabiamos el estilo del desplegable del spinner que seria el array
+        arrayGenero.setDropDownViewResource(R.layout.spinner_dropdown_item);
+
+        ArrayAdapter<CharSequence> arrayProvincia = ArrayAdapter.createFromResource(this, R.array.provincias, R.layout.spinner_item);
+        //Camabiamos el estilo del desplegable del spinner que seria el array
+        arrayProvincia.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spinProvincia.setAdapter(arrayProvincia);
     }
 
