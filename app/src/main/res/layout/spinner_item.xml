@@ -3,10 +3,9 @@
     tenemos que desactivar el tema por defecto a NoActionBar -->
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/SpinnerCustom"
+    android:id="@+id/SpinnerTextoBlanco"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:textSize="20sp"
+    android:textSize="18sp"
     android:gravity="left"
-    android:textColor="#FFFFFF"
-    android:padding="5dip" />
+    android:textColor="#FFFFFF" />

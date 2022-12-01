@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Si no creamos este estilo, el color del texto de los items dentro del desplegables tambien seran
+    del mismo color que especificamos en spinner_item.xml, tenemos que llamar en java este estilo
+ -->
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="15dp"
+    android:padding="5dp"
+    android:textColor="#000000" />
