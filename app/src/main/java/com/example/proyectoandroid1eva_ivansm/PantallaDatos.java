@@ -56,13 +56,11 @@ public class PantallaDatos extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    //////////////// Action Bar ////////////////
+    //////////////////////////////////////////////
 
-    //Metodo que hace que el boton al que se le aplique redireccione al activity pantalla de test
+    //Metodo que abre el activity pantalla de test
     public void irPantallaTest (View view) {
-
         Intent i = new Intent(this, PantallaTest.class);
-
         startActivity(i);
     }
 }
