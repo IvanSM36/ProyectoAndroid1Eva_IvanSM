@@ -110,8 +110,8 @@
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FFFFFF"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
             <Spinner
@@ -120,8 +120,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:backgroundTint="#FFFFFF"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         </LinearLayout>

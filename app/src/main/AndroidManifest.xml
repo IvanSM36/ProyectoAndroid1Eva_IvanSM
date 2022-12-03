@@ -15,8 +15,13 @@
         android:theme="@style/Theme.ProyectoAndroid1ºEva_IvanSM"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+        <!--
+        android:screenOrientation="portrait" Hace que no se pueda girar la pantalla en este activity
+        -->
         <activity
             android:name=".PantallaResultado"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -24,6 +29,7 @@
         </activity>
         <activity
             android:name=".PantallaAcercde"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -31,6 +37,7 @@
         </activity>
         <activity
             android:name=".PantallaAyudas"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -38,6 +45,7 @@
         </activity>
         <activity
             android:name=".PantallaTest"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -45,6 +53,7 @@
         </activity>
         <activity
             android:name=".PantallaDatos"
+            android:screenOrientation="portrait"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -52,6 +61,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

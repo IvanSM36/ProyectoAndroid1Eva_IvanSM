@@ -6,6 +6,8 @@
     android:id="@+id/SpinnerTextoBlanco"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:background="@drawable/marco_spinner"
     android:textSize="18sp"
     android:gravity="left"
     android:textColor="#FFFFFF" />

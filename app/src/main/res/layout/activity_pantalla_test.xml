@@ -68,7 +68,6 @@
                     android:textStyle="bold" />
 
                 <View
-                    android:id="@+id/view01"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="10dp"
@@ -76,7 +75,6 @@
                     android:background="@color/white" />
 
                 <TextView
-                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -93,6 +91,7 @@
                     android:background="@color/white" />
 
                 <RadioGroup
+                    android:id="@+id/rgPregunta1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp">
@@ -147,6 +146,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:layout_weight="1"
+                    android:onClick="pregunta1atras"
                     android:text="atras"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
@@ -157,6 +157,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
+                    android:onClick="pregunta1siguiente"
                     android:text="siguiente"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
@@ -188,7 +189,6 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="20dp">
-
 
                 <TextView
                     android:id="@+id/txt2Pregunta"
@@ -226,6 +226,7 @@
                     android:background="@color/white" />
 
                 <RadioGroup
+                    android:id="@+id/rgPregunta2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp">
@@ -280,6 +281,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:layout_weight="1"
+                    android:onClick="pregunta2atras"
                     android:text="atras"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
@@ -290,6 +292,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
+                    android:onClick="pregunta2siguiente"
                     android:text="siguiente"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
@@ -359,6 +362,7 @@
                     android:background="@color/white" />
 
                 <RadioGroup
+                    android:id="@+id/rgPregunta3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp">
@@ -415,7 +419,8 @@
                     android:layout_weight="1"
                     android:text="atras"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta3atras"/>
 
                 <Button
                     android:id="@+id/btnSiguiente3"
@@ -425,7 +430,8 @@
                     android:layout_weight="1"
                     android:text="siguiente"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta3siguiente"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -467,7 +473,6 @@
                     android:textStyle="bold" />
 
                 <View
-                    android:id="@+id/view4_1"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="10dp"
@@ -484,7 +489,6 @@
                     android:textSize="20dp" />
 
                 <View
-                    android:id="@+id/view04_2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_marginTop="10dp"
@@ -492,6 +496,7 @@
                     android:background="@color/white" />
 
                 <RadioGroup
+                    android:id="@+id/rgPregunta4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp">
@@ -548,7 +553,8 @@
                     android:layout_weight="1"
                     android:text="atras"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta4atras"/>
 
                 <Button
                     android:id="@+id/btnSiguiente4"
@@ -558,7 +564,8 @@
                     android:layout_weight="1"
                     android:text="siguiente"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta4siguiente"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -672,7 +679,8 @@
                     android:layout_weight="1"
                     android:text="atras"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta5atras"/>
 
                 <Button
                     android:id="@+id/btnSiguiente5"
@@ -682,7 +690,8 @@
                     android:layout_weight="1"
                     android:text="siguiente"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta5siguiente"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -747,6 +756,7 @@
                     android:background="@color/white" />
 
                 <RadioGroup
+                    android:id="@+id/rgPregunta5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp">
@@ -803,7 +813,8 @@
                     android:layout_weight="1"
                     android:text="atras"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta6atras"/>
 
                 <Button
                     android:id="@+id/btnSiguiente6"
@@ -813,7 +824,8 @@
                     android:layout_weight="1"
                     android:text="siguiente"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta6siguiente"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -878,6 +890,7 @@
                     android:background="@color/white" />
 
                 <RadioGroup
+                    android:id="@+id/rgPregunta6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp">
@@ -934,7 +947,8 @@
                     android:layout_weight="1"
                     android:text="atras"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta7atras"/>
 
                 <Button
                     android:id="@+id/btnSiguiente7"
@@ -944,7 +958,9 @@
                     android:layout_weight="1"
                     android:text="siguiente"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta7siguiente"/>
+
             </LinearLayout>
         </LinearLayout>
 
@@ -1009,6 +1025,7 @@
                     android:background="@color/white" />
 
                 <RadioGroup
+                    android:id="@+id/rgPregunta7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp">
@@ -1065,7 +1082,8 @@
                     android:layout_weight="1"
                     android:text="atras"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta8atras"/>
 
                 <Button
                     android:id="@+id/btnFinalizar"
@@ -1075,7 +1093,8 @@
                     android:layout_weight="1"
                     android:text="finalizar"
                     android:textColor="@color/white"
-                    android:textSize="20dp" />
+                    android:textSize="20dp"
+                    android:onClick="pregunta8Finalizar"/>
             </LinearLayout>
         </LinearLayout>
 

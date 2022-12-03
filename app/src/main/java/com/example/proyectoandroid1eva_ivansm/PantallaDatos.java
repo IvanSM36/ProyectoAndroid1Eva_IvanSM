@@ -8,11 +8,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class PantallaDatos extends AppCompatActivity {
 
+    private EditText editTxtedad;
     private Spinner spinGenero;
     private Spinner spinProvincia;
 
@@ -21,6 +24,7 @@ public class PantallaDatos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_datos);
 
+        editTxtedad = (EditText)findViewById(R.id.editTxtEdad);
         spinGenero = (Spinner)findViewById(R.id.spinGenero);
         spinProvincia = (Spinner)findViewById(R.id.spinProvincias);
 
@@ -60,7 +64,37 @@ public class PantallaDatos extends AppCompatActivity {
 
     //Metodo que abre el activity pantalla de test
     public void irPantallaTest (View view) {
-        Intent i = new Intent(this, PantallaTest.class);
-        startActivity(i);
+
+        String edad = editTxtedad.getText().toString();
+        String genero = spinGenero.getSelectedItem().toString();
+        String provincia = spinProvincia.getSelectedItem().toString();
+
+        // Si la edad esta vacia saldra un mensaje toast
+        if (edad.equals("")) {
+            Toast.makeText(this, "Por favor, introduzca una edad", Toast.LENGTH_LONG).show();
+            editTxtedad.requestFocus();
+            // Si el genero esta vacio saldra un mensaje toast
+        }else if(genero.equals("")){
+            Toast.makeText(this, "Por favor, elige un genero", Toast.LENGTH_LONG).show();
+            spinGenero.requestFocus();
+            // Si la provincia esta vacia saldra un mensaje toast
+        }else if(provincia.equals("")) {
+            Toast.makeText(this, "Por favor, elige una provincia", Toast.LENGTH_LONG).show();
+            spinProvincia.requestFocus();
+            // Si no  pasaremos los datos al siguiente activity y nos redirige al siguiente activity
+        }else {
+            Intent resultadoDatos = new Intent(this, PantallaTest.class);
+
+            String e = (editTxtedad.getText().toString());
+            String gen = spinGenero.getSelectedItem().toString();
+            String prov = spinProvincia.getSelectedItem().toString();
+
+            resultadoDatos.putExtra("edad", e);
+            resultadoDatos.putExtra("genero", gen);
+            resultadoDatos.putExtra("provincia", prov);
+
+            startActivity(resultadoDatos);
+        }
+
     }
 }
