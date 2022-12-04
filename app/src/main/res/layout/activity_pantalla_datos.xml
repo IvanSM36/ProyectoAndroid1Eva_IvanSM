@@ -61,7 +61,6 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <View
-            android:id="@+id/view01"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="10dp"
@@ -127,7 +126,6 @@
         </LinearLayout>
 
         <View
-            android:id="@+id/view03"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/white" />

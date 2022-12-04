@@ -146,26 +146,31 @@ public class PantallaTest extends AppCompatActivity {
         startActivity(i);
     }
 
+    //Metodo para Ocultar y mostrar el siguiente fragmen
     public void pregunta1siguiente(View view){
         f1.setVisibility(GONE); //Oculta frame1
         f2.setVisibility(View.VISIBLE); //Muestra frame2
     }
 
+    //Metodo para Ocultar y mostrar el fragmen anterior
     public void pregunta2atras(View view){
         f2.setVisibility(GONE); //Oculta frame2
         f1.setVisibility(View.VISIBLE); //Muestra frame1
     }
 
+    //Metodo para Ocultar y mostrar el siguiente fragmen
     public void pregunta2siguiente(View view){
         f2.setVisibility(GONE); //Oculta frame2
         f3.setVisibility(View.VISIBLE); // Muestra frame3
     }
 
+    //Metodo para Ocultar y mostrar el siguiente fragmen
     public void pregunta3atras(View view){
         f3.setVisibility(GONE); //Oculta frame3
         f2.setVisibility(View.VISIBLE); //Muestra frame2
     }
 
+    //Metodo para Ocultar y mostrar el siguiente fragmen
     public void pregunta3siguiente(View view){
         f3.setVisibility(GONE); //Oculta frame3
         f4.setVisibility(View.VISIBLE); //Muestra frame 4
@@ -215,26 +220,34 @@ public class PantallaTest extends AppCompatActivity {
         f7.setVisibility(View.VISIBLE);
     }
 
+    //Metodo del boton Finalizar que recoge los datos y los pasa a la siguiente activity
     public void pregunta8Finalizar(View view){
         //Recogemos los datos de la pantalla datos para luego pasarlos al activity PantallaResultado
-        Bundle datos = getIntent().getExtras();
         Intent resultado = new Intent(this, PantallaResultado.class);
+        //Con bundle recogemos los datos del activity anterior
+        Bundle datos = getIntent().getExtras();
 
+        //Guardamos los datos del activity anterior en variables
         String e = datos.getString("edad");
         String gen = datos.getString("genero");
         String prov = datos.getString("provincia");
 
+        //LLamamos a los metodos comprobarAciertos y comprobarFallos para calcularlos
         String pos = Integer.toString(comprobarAciertos());
         String neg = Integer.toString(comprobarfallos());
 
+        //Metemos los datos en un nuevo objeto Intent para pasarlos al siguiente activity
         resultado.putExtra("edad", e);
         resultado.putExtra("genero",gen);
         resultado.putExtra("provincia",prov);
         resultado.putExtra("aciertos", pos);
         resultado.putExtra("fallos", neg);
+
+        //Lanzamos el siguiente activity
         startActivity(resultado);
     }
 
+    //Metodo que comprueba y cuenta los aciertos
     public int comprobarAciertos(){
         //Comprobamos los aciertos y los fallos del test
         if(radiobtn01.isChecked())
@@ -257,6 +270,7 @@ public class PantallaTest extends AppCompatActivity {
      return aciertos;
     }
 
+    //Metodo que comprueba y cuenta los fallos
     public int comprobarfallos(){
         //Comprobamos los aciertos y los fallos del test
         if(!radiobtn01.isChecked())

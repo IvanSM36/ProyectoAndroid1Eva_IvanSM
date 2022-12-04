@@ -24,10 +24,13 @@ public class PantallaAyudas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_ayudas);
 
+        // Declaramos las variables con los botones
         txtScroll = (TextView)findViewById(R.id.txtViewScroll);
+        botonAtras = (Button)findViewById(R.id.btnAtras);
+
+        // Hace que el textView tenga Scroll
         txtScroll.setMovementMethod(new ScrollingMovementMethod());
 
-        botonAtras = (Button)findViewById(R.id.btnAtras);
     }
 
     //////////////// Action Bar ////////////////
@@ -53,8 +56,8 @@ public class PantallaAyudas extends AppCompatActivity {
     }
     //////////////// Action Bar ////////////////
 
-    //Metodo que hace que el boton al que se le aplique redireccione al activity pantalla de datos
-    public void irPantallaDatos (View view) {
+    //Metodo que redirecciona al activity principal
+    public void irPantallaPrincipal (View view) {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
     }

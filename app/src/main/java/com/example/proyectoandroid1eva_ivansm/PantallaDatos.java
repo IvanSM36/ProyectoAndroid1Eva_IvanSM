@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class PantallaDatos extends AppCompatActivity {
 
+    // Declaramos las variables
     private EditText editTxtedad;
     private Spinner spinGenero;
     private Spinner spinProvincia;
@@ -24,17 +25,21 @@ public class PantallaDatos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_datos);
 
+        // Inicializamos las variables con los botones
         editTxtedad = (EditText)findViewById(R.id.editTxtEdad);
         spinGenero = (Spinner)findViewById(R.id.spinGenero);
         spinProvincia = (Spinner)findViewById(R.id.spinProvincias);
 
+        // Creamos un ArrayAdapter que contendra los items del spinnerGenero que se encuentra en app/res/values/spinners.xml
         ArrayAdapter<CharSequence> arrayGenero = ArrayAdapter.createFromResource(this, R.array.genero, R.layout.spinner_item);
-        spinGenero.setAdapter(arrayGenero);
-        //Camabiamos el estilo del desplegable del spinner que seria el array
+        // Cambiamos el estilo del desplegable del spinner que se encuentra en app/res/layout/spinner_dropdown_item.xml
         arrayGenero.setDropDownViewResource(R.layout.spinner_dropdown_item);
+        // Introduce los items del spinner en el array
+        spinGenero.setAdapter(arrayGenero);
 
+        // Creamos un ArrayAdapter que contendra los items del spinnerProvincia
         ArrayAdapter<CharSequence> arrayProvincia = ArrayAdapter.createFromResource(this, R.array.provincias, R.layout.spinner_item);
-        //Camabiamos el estilo del desplegable del spinner que seria el array
+        // Cambiamos el estilo del desplegable del spinner
         arrayProvincia.setDropDownViewResource(R.layout.spinner_dropdown_item);
         spinProvincia.setAdapter(arrayProvincia);
     }
@@ -65,11 +70,12 @@ public class PantallaDatos extends AppCompatActivity {
     //Metodo que abre el activity pantalla de test
     public void irPantallaTest (View view) {
 
+        // Guardamos los datos de los componentes en variables
         String edad = editTxtedad.getText().toString();
         String genero = spinGenero.getSelectedItem().toString();
         String provincia = spinProvincia.getSelectedItem().toString();
 
-        // Si la edad esta vacia saldra un mensaje toast
+        //Comprobamos si los campos estan vacios muestre un mensaje Toast y no deje avanzar
         if (edad.equals("")) {
             Toast.makeText(this, "Por favor, introduzca una edad", Toast.LENGTH_LONG).show();
             editTxtedad.requestFocus();
@@ -83,16 +89,15 @@ public class PantallaDatos extends AppCompatActivity {
             spinProvincia.requestFocus();
             // Si no  pasaremos los datos al siguiente activity y nos redirige al siguiente activity
         }else {
+            // Creamos un objeto Intent para pasar los datos a la siguiente activity
             Intent resultadoDatos = new Intent(this, PantallaTest.class);
 
-            String e = (editTxtedad.getText().toString());
-            String gen = spinGenero.getSelectedItem().toString();
-            String prov = spinProvincia.getSelectedItem().toString();
+            // Metemos los datos recogidos en el objeto Intent
+            resultadoDatos.putExtra("edad", edad);
+            resultadoDatos.putExtra("genero", genero);
+            resultadoDatos.putExtra("provincia", provincia);
 
-            resultadoDatos.putExtra("edad", e);
-            resultadoDatos.putExtra("genero", gen);
-            resultadoDatos.putExtra("provincia", prov);
-
+            //Lanzamos el siguiente activity
             startActivity(resultadoDatos);
         }
 

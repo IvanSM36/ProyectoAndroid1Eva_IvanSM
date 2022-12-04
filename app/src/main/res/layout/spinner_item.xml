@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Damos el diseño al TextView. al item seleccionado del spinner
-    tenemos que desactivar el tema por defecto a NoActionBar -->
+<!--
+    Modificamos el TextView de los spinners
+    Cambiamos el color del texto despues de seleccionar un item en blanco
+    Modificamos el background para que tenga bordes blancos app/res/layout/spinner_item.xml
+-->
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/SpinnerTextoBlanco"

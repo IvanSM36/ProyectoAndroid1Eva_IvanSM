@@ -7,81 +7,96 @@
     android:background="@drawable/sebusca"
     tools:context=".PantallaAcercde">
 
-
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="283dp"
-        android:layout_height="400dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="61dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="20dp"
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="293dp"
+        android:layout_height="405dp"
+        android:background="@drawable/yomago"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52">
+        app:layout_constraintVertical_bias="0.521" />
 
-        <ImageView
-            android:id="@+id/imgLogo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.821"
-            app:srcCompat="@drawable/logo" />
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFondo"
+        app:layout_constraintEnd_toEndOf="@+id/imgFondo"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="@+id/imgFondo"
+        app:layout_constraintTop_toTopOf="@+id/imgFondo"
+        app:layout_constraintVertical_bias="0.021"
+        app:srcCompat="@drawable/logo" />
 
-        <TextView
-            android:id="@+id/txtViewFechaCreadion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/aladin"
-            android:padding="10dp"
-            android:text="Hogwarts Test"
-            android:textAlignment="viewStart"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/txtViewFechaCreadion"
+        android:layout_width="250dp"
+        android:layout_height="47dp"
+        android:background="#150F0A"
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Hogwarts Test"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewCreador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFondo" />
 
-        <TextView
-            android:id="@+id/txtViewCreador"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/aladin"
-            android:padding="10dp"
-            android:text="Ivan Salguero Martín"
-            android:textAlignment="viewStart"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/txtViewCreador"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#7E6C4F"
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Ivan Salguero Martín"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewNombreApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFondo"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <TextView
-            android:id="@+id/txtViewNombreApp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/aladin"
-            android:padding="1dp"
-            android:text="App creada en 2022"
-            android:textAlignment="viewStart"
-            android:textAllCaps="true"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/txtViewNombreApp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#7E6C4F"
+        android:fontFamily="@font/aladin"
+        android:gravity="center"
+        android:padding="1dp"
+        android:text="App creada en 2022"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgFondo"
+        app:layout_constraintVertical_bias="0.99" />
 
-        <Button
+    <Button
 
-            android:id="@+id/btnAtras"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="irPantallaDatos"
-            android:layout_margin="15dp"
-            android:text="atras"
-            android:textSize="15dp" />
-    </LinearLayout>
+        android:id="@+id/btnAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="irPantallaPrincipal"
+        android:text="atras"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgFondo"
+        app:layout_constraintEnd_toEndOf="@+id/imgFondo"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="@+id/imgFondo"
+        app:layout_constraintTop_toTopOf="@+id/imgFondo"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
