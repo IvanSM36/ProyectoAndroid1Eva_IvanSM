@@ -38,9 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     //Metodo para asignar las funciones de los items del Action Bar
     public boolean onOptionsItemSelected(MenuItem item){
-
-        //Obtenemos un item del menu
-        int id = item.getItemId();
+        int id = item.getItemId(); //Obtenemos un item del menu
         // Si ese item es Ayuda nos redirige a la pantalla Ayuda y nos muestra un Toast
         if(id == R.id.item01){
             Intent i = new Intent(this, PantallaAyudas.class);

@@ -27,7 +27,7 @@ public class PantallaAcercde extends AppCompatActivity {
         botonAtras = (Button)findViewById(R.id.btnAtras);
     }
     //////////////// Action Bar ////////////////
-    //Metodo para mostrar y ocultar el ActionBar
+    //Metodo para mostrar y ocultar el ActionBar(Tres Puntitos)
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.actionbar, menu);
         return true;
@@ -35,7 +35,7 @@ public class PantallaAcercde extends AppCompatActivity {
 
     //Metodo para asignar las funciones de los items del Action Bar
     public boolean onOptionsItemSelected(MenuItem item){
-        int id = item.getItemId();
+        int id = item.getItemId(); //Obtenemos el id de un item
         if(id == R.id.item01){
             Intent i = new Intent(this, PantallaAyudas.class);
             startActivity(i);
